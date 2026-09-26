@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankit Yadav — Web and Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">AY<span class="logo-dot">.</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="./My Resume.pdf" class="nav-link" target="_blank">Resume</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-small header-cta">Hire me</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow-line">Web Developer · Python Developer · PHP Developer</p>
+        <h1><span class="gradient-text">Ankit Yadav</span> builds things<br>that work on the web.</h1>
+        <p class="hero-sub">BCA student from Delhi, who likes turning
+          plain ideas into working software — from PHP-backed web apps to small
+          Python tools. Currently looking for developer opportunities.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="editor-card">
+          <div class="editor-topbar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="editor-filename">about_me.py</span>
+          </div>
+          <pre class="editor-body"><code><span class="tok-kw">class</span> <span class="tok-cls">Developer</span>:
+    <span class="tok-kw">def</span> <span class="tok-fn">__init__</span>(self):
+        self.name = <span class="tok-str">"Ankit Yadav"</span>
+        self.based_in = <span class="tok-str">"Delhi, India"</span>
+        self.stack = [<span class="tok-str">"Python"</span>, <span class="tok-str">"PHP"</span>, <span class="tok-str">"WebApps"</span>
+                      <span class="tok-str">"JavaScript"</span>, <span class="tok-str">"SQL"</span>]
+        self.status = <span class="tok-str">"Open to work"</span><span class="cursor" id="typeCursor"></span></code></pre>
+        </div>
+
+        <div class="avatar-frame" aria-hidden="true">
+          <img src="./profile_picture.jpeg" alt="Ankit Yadav" class="avatar-photo">
+            <circle cx="60" cy="60" r="60" fill="#10151B"/>
+            <circle cx="60" cy="48" r="22" fill="#EEF1F3" opacity="0.9"/>
+            <path d="M18 112c4-26 24-40 42-40s38 14 42 40" fill="#EEF1F3" opacity="0.9"/>
+          </svg>
+          <span class="avatar-note">profile_picture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / EDUCATION ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title reveal">About and Education</h2>
+      <p class="section-lead reveal">A short version of my academic path so far.</p>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-when">2023 – 2026</p>
+            <h3>BCA — Computer Applications & Programming — 75%</h3>
+            <p class="timeline-place">Shibli National College, Azamgarh, Uttar Pradesh</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-when">2023</p>
+            <h3>Intermediate (Class 12) — 75%</h3>
+            <p class="timeline-place">Uttar Pradesh Board</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="timeline-when">2021</p>
+            <h3>High School (Class 10) — 83%</h3>
+            <p class="timeline-place">Uttar Pradesh Board</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Skills</h2>
+      <p class="section-lead reveal">Languages and tools I currently work with.</p>
+
+      <div class="skills-grid">
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">PHP</div>
+        <div class="skill-chip">C</div>
+        <div class="skill-chip">C++</div>
+        <div class="skill-chip">SQL / MySQL</div>
+        <div class="skill-chip">Bash</div>
+        <div class="skill-chip">Web Development</div>
+        <div class="skill-chip">JWT Authentication</div>
+        <div class="skill-chip">bcrypt / Password Hashing</div>
+        <!-- Add a new skill by copying the line above:
+             <div class="skill-chip">Skill name</div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-lead reveal">Things I've built, newest additions go on top.</p>
+
+      <!-- PROJECT LIST — stacked vertically on purpose, so new cards can be
+           added above this comment without touching the layout. -->
+      <div class="project-list">
+
+        <article class="project-card reveal">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <h3>WriteSpace — Blog Website</h3>
+            <p>A blogging platform where users can publish and read posts.
+              Built with a focus on clean layout and a smooth writing experience.</p>
+            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Web</span></div>
+            <a href="https://writespace.great-site.net/" target="_blank" rel="noopener" class="project-link">View live demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <h3>Student Data Management System</h3>
+            <p>A system to add, update and manage student records, with a
+              PHP backend and MySQL database behind a simple admin interface.</p>
+            <div class="project-tags"><span>Python</span><span>PHP</span><span>MySQL</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <h3>Invoice Generator</h3>
+            <p>A tool that generates clean, print-ready invoices from simple
+              billing details, built to save repetitive manual work.</p>
+            <div class="project-tags"><span>Python</span><span>Web</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">04</div>
+          <div class="project-body">
+            <h3>Human Face Detector</h3>
+            <p>A Python script that detects human faces in images in real time,
+              built while exploring computer vision basics.</p>
+            <div class="project-tags"><span>Python</span><span>OpenCV</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">05</div>
+          <div class="project-body">
+            <h3>Tic Tac Toe (Python)</h3>
+            <p>A two-player Tic Tac Toe game with a simple command-line
+              interface and win/draw detection logic.</p>
+            <div class="project-tags"><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index">06</div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>This site — a responsive portfolio built with plain HTML, CSS
+              and JavaScript to showcase my projects and skills.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <!-- TO ADD A NEW PROJECT: copy one <article class="project-card reveal">...</article>
+             block, paste it at the TOP of this list, update the number in
+             .project-index, and edit the title / description / tags / link. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section section-alt" id="certificates">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Certificates</h2>
+      <p class="section-lead reveal">Courses and exams I've completed.</p>
+
+      <div class="cert-list">
+        <div class="cert-card reveal">
+          <h3>CCC — Course on Computer Concepts</h3>
+          <p class="cert-meta">NIELIT · Grade B · July 2023</p>
+        </div>
+        <div class="cert-card reveal">
+          <h3>O Level</h3>
+          <p class="cert-meta">NIELIT · Result awaited</p>
+        </div>
+        <!-- Add a new certificate by copying one .cert-card block above -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-lead">Open to web development and Python developer roles —
+        reach out and I'll get back to you.</p>
+      <div class="contact-actions">
+        <a href="mailto:ydvankit1070@gmail.com" class="btn btn-primary">Email me</a>
+        <a href="tel:+916394611070" class="btn btn-ghost">Call me</a>
+      </div>
+      <div class="contact-details">
+        <p><span>Phone :</span> +91 63946 11070</p>
+        <p><span>Email :</span> ydvankit1070@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-name">Ankit Yadav</p>
+
+    <div class="footer-social">
+      <a href="https://github.com/itzydvankit" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.13-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.44-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.12 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.62 1.62.23 2.82.11 3.12.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ankit-yadav-64686136a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="https://instagram.com/its.ydv.ankit" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4.6.24 1.03.52 1.48.97.45.45.73.88.97 1.48.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43-.24.6-.52 1.03-.97 1.48-.45.45-.88.73-1.48.97-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.02 4.02 0 0 1-1.48-.97 4.02 4.02 0 0 1-.97-1.48c-.16-.46-.35-1.26-.4-2.43-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43.24-.6.52-1.03.97-1.48.45-.45.88-.73 1.48-.97.46-.16 1.26-.35 2.43-.4C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.14 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.24-.07 1.6-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.6.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.24.07-1.6.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.82a3.02 3.02 0 0 0-.73-1.13 3.02 3.02 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34-1.24-.06-1.6-.07-4.74-.07Zm0 3.06a4.94 4.94 0 1 1 0 9.88 4.94 4.94 0 0 1 0-9.88Zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28Zm5.14-2a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> Ankit Yadav. Built with HTML, CSS and JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
